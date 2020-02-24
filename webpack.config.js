@@ -1,10 +1,10 @@
+// Webpack 3 docs: https://webpack-v3.netlify.com/
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
   entry: './src/js/entry.js',
   output: {
-    filename: 'bundle.js',
+    filename: './dist/bundle.js',
   },
   module: {
     rules: [
@@ -15,8 +15,9 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
+              importLoaders: 1,
               modules: {
-                localIdentName: '[local]--[hash:base64:8]', // https://webpack.js.org/loaders/css-loader/#localidentname
+                localIdentName: '[local]--[hash:base64:8]',
               },
               localsConvention: 'camelCase',
             },
@@ -27,13 +28,8 @@ module.exports = {
   },
   resolve: {
     modules: [
-      path.resolve(__dirname, 'src', 'js'), // https://webpack.js.org/configuration/resolve/#resolvemodules
+      path.resolve(__dirname, 'src', 'js'),
       path.resolve(__dirname, 'src', 'styles'),
     ],
   }
 };
-
-// TODO
-// sass-loader
-// eslint
-// babel, react
