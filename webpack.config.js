@@ -32,3 +32,8 @@ module.exports = {
     ],
   }
 };
+
+// TODO
+// sass-loader
+// eslint
+// babel, react
