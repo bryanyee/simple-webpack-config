@@ -1,0 +1,7 @@
+.my-class {
+  color: red;
+}
+
+:global(.the-other-class) {
+  font-size: 14pt;
+}
