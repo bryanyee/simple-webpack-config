@@ -1,5 +1,5 @@
 # simple-webpack-config
-Simple webpack 4 configuration
+Simple webpack 3 configuration
 
 ```
 yarn install
