@@ -1,5 +1,5 @@
 import './child.js';
-import './style.css';
+import '../styles/style.css';
 
 function consoleTest() {
   console.log('test');

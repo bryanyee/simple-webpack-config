@@ -81,31 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./test.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/entry.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./child.js":
-/*!******************!*\
-  !*** ./child.js ***!
-  \******************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction child() {\n  console.log('child');\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (child);\n\n\n//# sourceURL=webpack:///./child.js?");
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js?!./style.css":
-/*!*******************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--4-1!./style.css ***!
-  \*******************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/styles/style.css":
+/*!******************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--4-1!./src/styles/style.css ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".my-class--2fbWqs6c {\\n  color: red;\\n}\\n\\n.the-other-class {\\n  font-size: 14pt;\\n}\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"myClass\": \"my-class--2fbWqs6c\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./style.css?./node_modules/css-loader/dist/cjs.js??ref--4-1");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".my-class--3b1C0rgS {\\n  color: red;\\n}\\n\\n.the-other-class {\\n  font-size: 14pt;\\n}\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"my-class\": \"my-class--3b1C0rgS\",\n\t\"myClass\": \"my-class--3b1C0rgS\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/styles/style.css?./node_modules/css-loader/dist/cjs.js??ref--4-1");
 
 /***/ }),
 
@@ -133,26 +121,38 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
-/***/ "./style.css":
-/*!*******************!*\
-  !*** ./style.css ***!
-  \*******************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var api = __webpack_require__(/*! ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !./node_modules/css-loader/dist/cjs.js??ref--4-1!./style.css */ \"./node_modules/css-loader/dist/cjs.js?!./style.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./style.css?");
-
-/***/ }),
-
-/***/ "./test.js":
-/*!*****************!*\
-  !*** ./test.js ***!
-  \*****************/
+/***/ "./src/js/child.js":
+/*!*************************!*\
+  !*** ./src/js/child.js ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _child_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./child.js */ \"./child.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nfunction consoleTest() {\n  console.log('test');\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (consoleTest);\n\n\n//# sourceURL=webpack:///./test.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction child() {\n  console.log('child');\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (child);\n\n\n//# sourceURL=webpack:///./src/js/child.js?");
+
+/***/ }),
+
+/***/ "./src/js/entry.js":
+/*!*************************!*\
+  !*** ./src/js/entry.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _child_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./child.js */ \"./src/js/child.js\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nfunction consoleTest() {\n  console.log('test');\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (consoleTest);\n\n\n//# sourceURL=webpack:///./src/js/entry.js?");
+
+/***/ }),
+
+/***/ "./src/styles/style.css":
+/*!******************************!*\
+  !*** ./src/styles/style.css ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--4-1!./style.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/styles/style.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/styles/style.css?");
 
 /***/ })
 
