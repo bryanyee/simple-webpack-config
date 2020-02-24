@@ -141,7 +141,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction child() {\n  console
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _child_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./child.js */ \"./src/js/child.js\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nfunction consoleTest() {\n  console.log('test');\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (consoleTest);\n\n\n//# sourceURL=webpack:///./src/js/entry.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var child__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! child */ \"./src/js/child.js\");\n/* harmony import */ var style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! style.css */ \"./src/styles/style.css\");\n/* harmony import */ var style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(style_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n\nfunction consoleTest() {\n  console.log('test');\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (consoleTest);\n\n\n//# sourceURL=webpack:///./src/js/entry.js?");
 
 /***/ }),
 

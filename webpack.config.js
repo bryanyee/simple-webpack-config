@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   mode: 'development',
   entry: './src/js/entry.js',
@@ -23,4 +25,10 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    modules: [
+      path.resolve(__dirname, 'src', 'js'), // https://webpack.js.org/configuration/resolve/#resolvemodules
+      path.resolve(__dirname, 'src', 'styles'),
+    ],
+  }
 };
